@@ -5,7 +5,7 @@ Thanks to the initial creators Ryan Butler and Manuel Winkel.
 
 The Citrix Downloader will download the following:
 
-## CVAD LTSR 1912 CU4
+## Citrix Virtual Apps & Desktops Long Term Service Release
 
 Citrix Virtual Apps and Desktops 7 1912 CU4 ISO
 
@@ -17,7 +17,7 @@ Single-session OS Core Services Virtual Delivery Agent 1912 LTSR CU4
 
 Citrix Provisioning 1912 CU4
 
-## CVAD 2112 CR
+## Citrix Virtual Apps & Desktops Current Release
 
 Citrix Virtual Apps and Desktops 7 2112 ISO
 
