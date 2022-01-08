@@ -44,6 +44,10 @@ $CSV = @"
 
 "20209","Workspace-Environment-Management-v-2112-01-00-01.zip","Workspace Environment Management 2112"
 
+"20248","CitrixWorkspaceApp.exe","Citrix Workspace app 2112.1 for Windows"
+"20217","CitrixWorkspaceApp.dmg","Citrix Workspace app 2112 for Mac"
+"20213","CitrixWorkspaceApp.exe","Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6"
+
 "20204","build-13.0-84.11_nc_64.tgz","Citrix ADC Release 13.0 Build 84.11(nCore)"
 "20205","NSVPX-XEN-13.0-84.11_nc_64.xva.gz","Citrix ADC VPX for Citrix Hypervisor 13.0 Build 84.11"
 "20206","NSVPX-ESX-13.0-84.11_nc_64.zip","Citrix ADC VPX for ESXi 13.0 Build 84.11"
@@ -66,10 +70,6 @@ $CSV = @"
 "20140","ADM-HyperV-13.1-12.50.zip","Citrix ADM image for HyperV, 13.1 Build 12.50"
 
 "8343","StorageCenter_5.11.21.msi","ShareFile StorageZones Controller 5.11.21"
-
-"20248","CitrixWorkspaceApp.exe","Citrix Workspace app 2112.1 for Windows"
-"20213","CitrixWorkspaceApp.exe","Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6"
-"20217","CitrixWorkspaceApp.dmg","Citrix Workspace app 2112 for Mac"
 
 "17421","CitrixHypervisor-8.2.1-install-cd.iso","Citrix Hypervisor 8.2 Base Installation ISO with Cumulative Update 1"
 "17423","CitrixHypervisor-8.2.1-update.iso","Citrix Hypervisor 8.2 Cumulative Update 1"

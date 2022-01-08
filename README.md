@@ -17,6 +17,8 @@ Single-session OS Core Services Virtual Delivery Agent 1912 LTSR CU4
 
 Citrix Provisioning 1912 CU4
 
+Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6
+
 ## Citrix Virtual Apps & Desktops Current Release
 
 Citrix Virtual Apps and Desktops 7 2112 ISO
@@ -28,6 +30,10 @@ Single-session OS Virtual Delivery Agent 2112
 Single-session OS Core Services Virtual Delivery Agent 2112
 
 Citrix Provisioning 2112
+
+Citrix Workspace app 2112.1 for Windows
+
+Citrix Workspace app 2112 for Mac
 
 ## Citrix License Server
 License Server for Windows - Version 11.17.2.0 Build 37000
@@ -79,13 +85,6 @@ Citrix ADM image for HyperV, 13.1 Build 12.50
 
 ## ShareFile
 ShareFile StorageZones Controller 5.11.21
-
-## Citrix Workspace App
-Citrix Workspace app 2112.1 for Windows
-
-Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6
-
-Citrix Workspace app 2112 for Mac
 
 ## Citrix Hypervisor
 Citrix Hypervisor 8.2 Base Installation ISO with Cumulative Update 1
