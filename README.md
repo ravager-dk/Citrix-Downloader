@@ -76,7 +76,7 @@ Citrix ADM image for HyperV, 13.1 Build 12.50
 ## ShareFile
 ShareFile StorageZones Controller 5.11.21
 
-##Citrix Workspace App
+## Citrix Workspace App
 Citrix Workspace app 2112.1 for Windows
 
 Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6
