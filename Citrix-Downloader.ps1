@@ -5,7 +5,7 @@ Download multiple VDA and ISO versions from Citrix.com
 Download various Citrix components through a GUI without spending hours navigating through the various Citrix sub-sites.
 
 .NOTES
-  Version:          0.01.5
+  Version:          0.01.6
   Author:           Dan Challinor
   Creation Date:    2021-10-22
 
@@ -57,6 +57,30 @@ $CSV = @"
 "20188","NSVPX-HyperV-13.1-12.51_nc_64.zip","Citrix ADC VPX for Hyper-V 13.1 Build 12.51"
 "20187","NSVPX-KVM-13.1-12.51_nc_64.tgz","Citrix ADC VPX for KVM 13.1 Build 12.51"
 "20189","NSVPX-GCP-13.1-12.51_nc.tar.gz","Citrix ADC VPX for GCP 13.1 Build 12.51"
+
+"20138","build-mas-13.1-12.50.tgz","Citrix ADM Upgrade Package - 13.1 Build 12.50"
+"20142","MAS-XEN-13.1-12.50.xva.gz","Citrix ADM image for Citrix Hypervisor, 13.1 Build 12.50"
+"20139","MAS-ESX-13.1-12.50.zip","Citrix ADM image for ESX, 13.1 Build 12.50"
+"20140","ADM-HyperV-13.1-12.50.zip","Citrix ADM image for HyperV, 13.1 Build 12.50"
+
+"8343","StorageCenter_5.11.21.msi","ShareFile StorageZones Controller 5.11.21"
+
+"20248","CitrixWorkspaceApp.exe","Citrix Workspace app 2112.1 for Windows"
+"20213","CitrixWorkspaceApp.exe","Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6"
+"20217","CitrixWorkspaceApp.dmg","Citrix Workspace app 2112 for Mac"
+
+"17421","CitrixHypervisor-8.2.1-install-cd.iso","Citrix Hypervisor 8.2 Base Installation ISO with Cumulative Update 1"
+"17423","CitrixHypervisor-8.2.1-update.iso","Citrix Hypervisor 8.2 Cumulative Update 1"
+"17426","CitrixHypervisor-8.2.4-XenCenter.msi","XenCenter 8.2.4"
+
+"14254","XenServer-7.1.2-install-cd.iso","XenServer 7.1 Base Installation ISO with Cumulative Update 2"
+"14257","XenServer-7.1.2-update.iso","XenServer 7.1 Cumulative Update 2"
+"17348","XenServer-7.1.2-XenCenter-7.1.4.msi","XenCenter 7.1 CU2 Windows Management Console"
+
+"19814","xms_10.14.0.6.xenserver.xva","XenMobile Server 10.14.0.6 (XenServer)"
+"19815","xms_10.14.0.6.HyperV.zip","XenMobile Server 10.14.0.6 (HyperV)"
+"19816","xms_10.14.0.6.vmware.ova","XenMobile Server 10.14.0.6 (VMWare)"
+"19817","xms_10.14.0.6.bin","XenMobile Server 10.14.0.6 upgrade from 10.13 or 10.12"
 "@
 
 #Folder dialog
@@ -154,7 +178,7 @@ $ErrorActionPreference = 'SilentlyContinue'
 
 # Is there a newer Evergreen Script version?
 # ========================================================================================================================================
-$eVersion = "0.01.5"
+$eVersion = "0.01.6"
 [bool]$NewerVersion = $false
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $WebResponseVersion = Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/eucexpert/Citrix-Downloader/main/Citrix-Downloader.ps1"
