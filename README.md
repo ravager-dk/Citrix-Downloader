@@ -51,6 +51,8 @@ Citrix ADC VPX for KVM 13.0 Build 84.11
 
 Citrix ADC VPX for GCP 13.0 Build 84.11
 
+SDX Platform Software Bundle 13.0 Build 84.11
+
 ## Citrix ADC 13.1
 Citrix ADC Release 13.1 Build 12.51(nCore)
 
@@ -63,6 +65,8 @@ Citrix ADC VPX for Hyper-V 13.1 Build 12.51
 Citrix ADC VPX for KVM 13.1 Build 12.51
 
 Citrix ADC VPX for GCP 13.1 Build 12.51
+
+SDX Platform Software Bundle 13.1 Build 12.51
 
 ## Citrix ADM
 Citrix ADM Upgrade Package - 13.1 Build 12.50
