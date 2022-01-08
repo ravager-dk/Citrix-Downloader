@@ -63,3 +63,45 @@ Citrix ADC VPX for Hyper-V 13.1 Build 12.51
 Citrix ADC VPX for KVM 13.1 Build 12.51
 
 Citrix ADC VPX for GCP 13.1 Build 12.51
+
+## Citrix ADM
+Citrix ADM Upgrade Package - 13.1 Build 12.50
+
+Citrix ADM image for Citrix Hypervisor, 13.1 Build 12.50
+
+Citrix ADM image for ESX, 13.1 Build 12.50
+
+Citrix ADM image for HyperV, 13.1 Build 12.50
+
+## ShareFile
+ShareFile StorageZones Controller 5.11.21
+
+##Citrix Workspace App
+Citrix Workspace app 2112.1 for Windows
+
+Citrix Workspace app 19.12.6000 for Windows, LTSR Cumulative Update 6
+
+Citrix Workspace app 2112 for Mac
+
+## Citrix Hypervisor
+Citrix Hypervisor 8.2 Base Installation ISO with Cumulative Update 1
+
+Citrix Hypervisor 8.2 Cumulative Update 1
+
+XenCenter 8.2.4
+
+## Citrix XenServer
+XenServer 7.1 Base Installation ISO with Cumulative Update 2
+
+XenServer 7.1 Cumulative Update 2
+
+XenCenter 7.1 CU2 Windows Management Console
+
+## XenMobile Server 10
+XenMobile Server 10.14.0.6 (XenServer)
+
+XenMobile Server 10.14.0.6 (HyperV)
+
+XenMobile Server 10.14.0.6 (VMWare)
+
+XenMobile Server 10.14.0.6 upgrade from 10.13 or 10.12
