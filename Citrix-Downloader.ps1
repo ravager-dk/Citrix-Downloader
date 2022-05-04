@@ -92,7 +92,7 @@ function get-ctxbinary {
     "__EVENTVALIDATION"    = ($download.InputFields | Where-Object { $_.id -eq "__EVENTVALIDATION" }).value
   }
 
-  $outfile = ($DLPATH + $DLEXE)
+  $outfile = join-path -Path $DLPATH -ChildPath $DLEXE
   #Download
   Invoke-WebRequest -Uri $dlurl -WebSession $websession -Method POST -Body $webform -ContentType "application/x-www-form-urlencoded" -UseBasicParsing -OutFile $outfile
   return $outfile
