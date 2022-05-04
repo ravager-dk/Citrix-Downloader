@@ -6,17 +6,18 @@ Download multiple VDA and ISO versions from Citrix.com
 Download various Citrix components without a GUI without spending hours navigating through the various Citrix sub-sites.
 
 .NOTES
-  Version:          0.02.1
-  Author:           Dan Challinor
+  Version:          0.02.2
+  Author:           Martin Nygaard Jensen
   Creation Date:    2021-10-22
 
   // NOTE: Purpose/Change
-  2020-06-20    Initial Version by Ryan Butler
+  2020-06-20    Initial Versions by Ryan Butler and Dan Challinor
   2021-10-22    Customization
   2021-12-22    Import of the download list into the script, no helper files needed anymore / Add Version Number and Version Check with Auto Update Function / Add Citrix 1912 CU4 and 2112 content / Add shortcut creation
   2021-12-23    Change password fields
   2022-01-07	  Added Citrix ADC Downloads
   2022-01-11    Made crossplatform - removing GUI components
+  2022-01-11    Made into own solution
 
 #>
 [CmdletBinding()]
@@ -26,7 +27,7 @@ param (
   [switch]$DoNotRefresh
 )
 import-module Microsoft.PowerShell.ConsoleGuiTools
-$eVersion = "0.02.1"
+$eVersion = "0.02.2"
 $CSV = Get-Content -Path ($PSScriptRoot + "/resources/downloads.csv")
 
 function get-ctxbinary {
@@ -100,7 +101,7 @@ function get-ctxbinary {
 function get-updatedlist {
   param ()
   If (!(Test-Path -Path "$PSScriptRoot\resources")) { New-Item -Path "$PSScriptRoot\resources" -ItemType Directory | Out-Null }
-  Invoke-WebRequest -Uri https://raw.githubusercontent.com/eucexpert/Citrix-Downloader/main/resources/downloads.csv -OutFile ("$PSScriptRoot\resources\downloads.csv")
+  Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ravager-dk/Citrix-Downloader/main/resources/downloads.csv" -OutFile ("$PSScriptRoot\resources\downloads.csv")
 }
 
 # Disable progress bar while downloading
@@ -117,7 +118,7 @@ If ((!($DoNotRefresh)) -or (!(Test-Path -Path "$PSScriptRoot\resources\downloads
 
 [bool]$NewerVersion = $false
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$WebResponseVersion = Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/eucexpert/Citrix-Downloader/main/Citrix-Downloader.ps1"
+$WebResponseVersion = Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/ravager-dk/Citrix-Downloader/main/Citrix-Downloader.ps1"
 If (!$WebVersion) {
   $WebVersion = (($WebResponseVersion.tostring() -split "[`r`n]" | select-string "Version:" | Select-Object -First 1) -split ":")[1].Trim()
 }
@@ -129,7 +130,7 @@ If ($WebVersion -gt $eVersion) {
 # ========================================================================================================================================
 Write-Output ""
 write-output "                     Citrix Downloader                      "
-write-output "                       Dan Challinor                        "
+write-output "                   Martin Nygaard Jensen                    "
 write-output "                      Version $eVersion                        "
 
 Write-Output ""
@@ -153,7 +154,7 @@ Else {
         [switch]$DoNotRefresh
       )
                 Remove-Item -Path "$PSScriptRoot\Citrix-Downloader.ps1" -Force
-                Invoke-WebRequest -Uri https://raw.githubusercontent.com/eucexpert/Citrix-Downloader/main/Citrix-Downloader.ps1 -OutFile ("$PSScriptRoot\" + "Citrix-Downloader.ps1")
+                Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ravager-dk/Citrix-Downloader/main/Citrix-Downloader.ps1" -OutFile ("$PSScriptRoot\" + "Citrix-Downloader.ps1")
                 & "$PSScriptRoot\Citrix-Downloader.ps1" -Path $Path -AutoUpdate:$AutoUpdate -DoNotRefresh:$DoNotRefresh
               }
               Invoke-Command -ScriptBlock $update -NoNewScope -ArgumentList $path,$AutoUpdate,$DoNotRefresh
