@@ -6,7 +6,7 @@ Download multiple VDA and ISO versions from Citrix.com
 Download various Citrix components without a GUI without spending hours navigating through the various Citrix sub-sites.
 
 .NOTES
-  Version:          0.02.2
+  Version:          0.02.3
   Author:           Martin Nygaard Jensen
   Creation Date:    2021-10-22
 
