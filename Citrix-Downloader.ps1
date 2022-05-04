@@ -27,7 +27,7 @@ param (
   [switch]$DoNotRefresh
 )
 import-module Microsoft.PowerShell.ConsoleGuiTools
-$eVersion = "0.02.2"
+$eVersion = "0.02.3"
 $CSV = Get-Content -Path ($PSScriptRoot + "/resources/downloads.csv")
 
 function get-ctxbinary {
